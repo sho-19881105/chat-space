@@ -7,7 +7,8 @@
 |email|string|null: false, unique: true|
 |password|string|null: false|
 |groups_id|integer|null:false, foreign_key: true|
-###Association
+
+### Association
 - has_many :messages
 - has_many :groups, through: groups_users
 
@@ -18,7 +19,8 @@
 |image_name|string||
 |created_at|timestamp|null: false|
 |user_id|integer|null: false, foreign_key: true|
-###Association
+
+### Association
 - belongs_to :users
 
 ## groupsテーブル
@@ -26,7 +28,8 @@
 |------|----|-------|
 |group_name|stirng|null: false|
 |user_id|integer|null: false,foreign_key: true|
-###Association
+
+### Association
 - has_many :users, through: groups_users
 
 ## groups_usersテーブル
@@ -34,7 +37,8 @@
 |------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
-###Association
+
+### Association
 - belongs_to :group
 - belongs_to :user
 
