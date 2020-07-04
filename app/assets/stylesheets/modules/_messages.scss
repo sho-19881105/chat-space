@@ -1,3 +1,206 @@
 * {
   box-sizing: border-box;
 }
+
+.wrapper {
+  display: flex;
+}
+
+.Side-bar {
+  color: #ffffff;
+  background-color: #253141;
+  width: 300px;
+  height: 100vh;
+}
+
+.LeftHeader {  
+  height: 100px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+
+  &__list {  
+    width: 260px;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+} 
+
+.LeftHeader__userName { 
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.LeftHeader__iconList { 
+    display: flex;
+    justify-content: end;
+    list-style: none;
+}
+
+.LeftHeader__icon {
+  margin-left: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.Top-items__icon {
+  color: #ffffff;
+}
+ 
+.GroupList {
+  background-color: #2f3e51;
+  height: calc(100vh - 100px);
+}
+
+.Group {
+  padding: 20px 20px 40px 20px;
+  font-weight: bold;
+}
+
+.Side-bar__group { 
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.Side-bar__message {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 11px;
+}
+
+//サイドボックスここまで
+//以下メイン
+
+.Chat-main {
+  background-color: #ffffff;
+  width: calc(100vw - 300px);
+  height: 100vh;
+  
+  
+}
+
+
+.RightHeader{
+  height: 100px;
+  padding: 0 40px;
+  border-bottom: 1px solid #eeeeee;
+  display: flex;
+  justify-content: space-between;
+
+  &__groupName {
+    font-size: 20px;
+    color: #333333;
+    margin-top: 35px;
+  }
+
+  &__memberList {
+    font-size: 12px;
+    color: #999999;
+    display: flex;
+    margin-top: 15px;
+  }
+
+    &__member {
+      padding-right: 5px;
+      padding-left: 5px;
+    }
+}
+.Chat-main__edit{
+  display: block;
+  border: 1px solid #38aef0;
+  color: #38aef0;
+  height: 40px;
+  margin-top: 28px;
+  padding: 0 20px;
+  text-decoration: none;
+  line-height: 40px;
+}
+
+//Right headerここまで
+
+.MessageField {  
+  background-color: #fafafa;
+  padding: 35px 40px 0;
+  height: calc(100vh - 190px);
+}
+
+.MessageBox {  
+  margin-bottom: 46px;
+}
+.MessageInfo {
+  display: flex;
+
+  &__userName {
+    font-size: 16px;
+    font-weight: bold;
+    color: #434a54;
+  }
+
+  &__date {
+    font-size: 12px;
+    color: #999999;
+    padding-left: 10px;
+  }
+}
+
+.Message {
+  margin-left: 12px;
+  &__content {
+    color: #434a54;
+    font-size: 14px;
+  }
+}
+
+//Message fieldここまで
+
+
+
+.Footer { 
+  background-color: #d2d2d2;
+  height: 90px;
+  padding: 20px 50px 20px 40px;
+    
+}
+
+.Form { 
+  display: flex;
+  justify-content: space-between;
+
+  &__contents { 
+    width: 100%;
+    position: relative;
+    background-color: #ffffff;
+  }
+
+    &__inputContents { 
+      width: 100%;
+      height: 50px;
+      padding: 0 40px 0 15px;
+      border: none;
+    }
+
+    &__inputImage { 
+      height: 50px;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      font-size: 25px;
+    }
+
+  &__submit { 
+    padding: 0 30px;
+    height: 50px;
+    margin-left: 15px;
+    font-size: 16px;
+    border: none;
+    background-color: #38aef0;
+    color: #ffffff;
+    cursor: pointer;
+  }
+}
+.Hidden {
+  display: none;
+}
+

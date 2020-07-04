@@ -1,1 +1,20 @@
-＜サイドバー＞
+.Side-bar
+  .LeftHeader
+    .LeftHeader__list
+      .LeftHeader__userName
+        Maiyan
+      %ul.LeftHeader__iconList
+        %li.LeftHeader__icon
+          = link_to "#", class: "Top-items__icon" do
+            = icon('far', 'edit', class: "Items__icon--edit")
+        %li.LeftHeader__icon
+          = link_to "#", class: "Top-items__icon" do
+            = icon('fa', 'cog', class: "Items__icon--cog")
+  .GroupList
+    .Group
+      .Group__name
+        = link_to "techcamp", "#", class: "Side-bar__group"
+      .Group__messade
+        = link_to "まだメッセージがありません", "#", class: "Side-bar__message"  
+
+
