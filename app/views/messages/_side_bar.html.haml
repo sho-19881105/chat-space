@@ -5,16 +5,18 @@
         = current_user.name
       %ul.LeftHeader__iconList
         %li.LeftHeader__icon
-          = link_to "#", class: "Top-items__icon" do
+          = link_to new_group_path, class: "Top-items__icon" do
             = icon('far', 'edit', class: "Items__icon--edit")
         %li.LeftHeader__icon
           = link_to edit_user_path(current_user), class: "Top-items__icon" do
             = icon('fas', 'cog', class: "Items__icon--cog")
   .GroupList
-    .Group
-      .Group__name
-        = link_to "techcamp", "#", class: "Side-bar__group"
-      .Group__messade
-        = link_to "まだメッセージがありません", "#", class: "Side-bar__message"  
+    - current_user.groups. each do |group|
+      .Group
+        = link_to '#' do
+          .Group__name
+            = group.name
+          .Group__message
+            メッセージはまだありません
 
 
