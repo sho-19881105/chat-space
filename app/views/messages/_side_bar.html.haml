@@ -2,14 +2,14 @@
   .LeftHeader
     .LeftHeader__list
       .LeftHeader__userName
-        Maiyan
+        = current_user.name
       %ul.LeftHeader__iconList
         %li.LeftHeader__icon
           = link_to "#", class: "Top-items__icon" do
             = icon('far', 'edit', class: "Items__icon--edit")
         %li.LeftHeader__icon
-          = link_to "#", class: "Top-items__icon" do
-            = icon('fa', 'cog', class: "Items__icon--cog")
+          = link_to edit_user_path(current_user), class: "Top-items__icon" do
+            = icon('fas', 'cog', class: "Items__icon--cog")
   .GroupList
     .Group
       .Group__name
