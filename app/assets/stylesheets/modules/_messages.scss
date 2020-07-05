@@ -52,19 +52,23 @@
   height: calc(100vh - 100px);
 }
 
+a {
+  text-decoration: none;
+}
+
 .Group {
   padding: 20px 20px 40px 20px;
   font-weight: bold;
 }
 
-.Side-bar__group { 
+.Group__name { 
   text-decoration: none;
   color: #ffffff;
   font-size: 15px;
   margin-bottom: 5px;
 }
 
-.Side-bar__message {
+.Group__message {
   text-decoration: none;
   color: #ffffff;
   font-size: 11px;
